@@ -1,0 +1,123 @@
+:root {
+   --main-white: white; 
+   --main-pink: #f50aba;
+   --main-purple: #4c2673
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--main-purple);
+}
+
+header {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--main-pink);
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--main-white);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main {
+    width: 96%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.column {
+    border: 2px dashed var(--main-white);
+    border-radius: 25px;
+    margin-bottom: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-header {
+    position: relative;
+    margin-top: -50px;
+    border: 2px solid var(--main-white);
+    background-color: var(--main-purple);
+    width: 100%;
+    font-size: 2rem;
+    padding-left: 15px;
+    color: var(--main-pink);
+
+}
+
+figcaption {
+    color: var(--main-pink);
+    margin-top: 1rem;
+    font-size: x-large;
+}
+
+pre {
+    background-color: var(--main-pink);
+    color: var(--main-white);
+    border-radius: 25px;
+    padding-top: 10px;
+    white-space: pre-wrap;
+    overflow: auto;
+}
+
+code {
+    font-size: 1.5em;
+}
+
+footer {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media  screen and (min-width: 768px) {
+    
+}
+
+@media  screen and (min-width: 992px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    main {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+
+}
